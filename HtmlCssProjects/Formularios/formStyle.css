@@ -1,0 +1,37 @@
+body{
+    margin: 50px;
+}
+
+label, #user{
+    display:block;
+    margin-bottom:5px;
+}
+
+#user, #facul, textarea, select{
+    width:350px;
+    outline: 0;
+    border: 1px solid #aaa;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+.termosLink{
+    color:black;
+    text-decoration: none;
+}
+
+.termosLink:hover{
+    text-decoration: underline;
+}
+
+button{
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}

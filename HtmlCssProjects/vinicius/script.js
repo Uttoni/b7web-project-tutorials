@@ -1,0 +1,1 @@
+document.getElementById("teste2").appendChild("<p>Tem algo aqui</p>");

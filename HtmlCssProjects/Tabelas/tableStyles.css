@@ -1,0 +1,17 @@
+table{
+    width: 300px;
+}
+
+thead td{
+    background-color: #ccc;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid black;
+    margin:0;
+}
+
+tbody tr:nth-child(even){
+    background-color: #eee;
+}

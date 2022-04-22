@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form action="./paginas/login.html" method="GET">
+        <label for="user">Usuario:</label>
+        <input type="text" name="usuario" id="user"/>
+        <br>
+        
+        <label>
+            Faculdade: <br>
+            <input type="text" name="faculdade" value="Inatel" id="facul"/>
+        </label>
+        <br>
+        
+        <label>
+            Serie: <br>
+            <select name="serie">
+                <option value="got">Game of Thrones</option>
+                <option value="tvd">The Vampire Diaries</option>
+                <option value="other" selected>Other</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label>
+            Filme: <br>
+            <select name="filme" size="2" multiple>
+                <option value="hf">Hidden Figures</option>
+                <option value="th">The Help</option>
+                <option value="fd">Fary Dust</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label>
+            Descrição: <br>
+            <textarea name="descricao"></textarea>
+        </label>
+
+        <br>
+        
+        <label>
+            <input type="checkbox" name="aceitar"/>
+            Li e aceito os <a href="paginas/termos.html" target="_blank" class="termosLink">termos de uso.</a>
+        </label>
+        
+        <br>
+        
+        <input type="submit" value="Submit input" />
+        <button>Submit button</button>
+    </form>
+</body>
+</html>

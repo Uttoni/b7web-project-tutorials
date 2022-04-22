@@ -1,0 +1,31 @@
+{{ > header }}
+
+<h1>Seja bem vindo(a) {{nomeCompleto}}</h1>
+<p>Qualquer mensagem</p>
+
+{{#mostrar}}
+    <p>Apareço se mostrar for true</p>
+{{/mostrar}}
+
+
+<p>Ingredientes</p>
+<ul>
+    {{#ingredientes}}
+        <li>{{nome}} - {{qtd}}</li>
+    {{/ingredientes}}
+</ul>
+{{^ingredientes}}
+    <p>Não há ingredientes</p>
+{{/ingredientes}}
+
+
+
+<p>Interesses</p>
+<ul>
+    {{#interesses}}
+        <li>{{.}}</li>
+    {{/interesses}}
+</ul>
+
+{{{codeHTML}}}
+

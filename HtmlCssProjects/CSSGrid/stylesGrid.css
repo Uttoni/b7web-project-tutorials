@@ -1,0 +1,98 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h" "m a" "f f";
+}
+
+header{
+    background: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-area: h;
+}
+
+main{
+    background: blue;
+    grid-column: 1/2;
+    grid-area: m;
+}
+
+aside{
+    background: green;
+    grid-column: 2/3;
+    grid-area: a;
+}
+
+footer{
+    background: red;
+    grid-area: f;
+}
+
+
+/*
+    justify-content: alinha o grid no espaço em volta dele  na horizontal
+    align-content: alinha o grid no espaço em volta dele na vertical
+*/
+
+.container-posicionar{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 10px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.hey{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    color: white;
+    background: black;
+    height: 100px;
+    width: 100px;
+    justify-items: end;
+    align-items: center;
+}
+
+.hey-ho{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    color: white;
+    background: black;
+    height: 100px;
+    width: 100px;
+    justify-items: end;
+    align-items: center;
+
+    justify-self: center;
+    align-self: end;
+}
+
+.container-posicionar>div>div{
+    margin: 0;
+    padding: 0;
+    position: 0;
+}
+.container-posicionar>div>div>p{
+    margin: 0;
+    padding: 0;
+}
